@@ -1,0 +1,251 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: calc(100% - 300px);
+    left: 300px;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.header-left p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.header-right .social-links a {
+    color: #333;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.header-right .social-links a:hover {
+    color: #007bff;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #ffffff;
+    color: #333;
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Sidebar image styling */
+.sidebar img {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Fixed height to maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 50%; /* Circular shape */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Main content styling */
+main {
+    margin-left: 320px;
+    padding: 2rem;
+    max-width: calc(100% - 320px);
+    margin-top: 70px; /* Space for fixed header */
+}
+
+/* Initially hide all sections */
+main > section {
+    display: none;
+}
+
+/* Make sure the visible section has a proper layout */
+main > section:target {
+    display: block;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: calc(100% - 300px);
+    left: 300px;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        left: 0;
+    }
+
+    main {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+ /* Responsive image styling */
+.sidebar img {
+    width: 50%;  /* Responsive width based on the container size */
+    max-width: 150px; /* Ensures it doesn't get too large */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular shape */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+    .sidebar a {
+        margin: 0.25rem 0;
+    }
+
+    .sidebar a.active {
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+
+    footer {
+        width: 100%;
+        left: 0;
+    }
+}
