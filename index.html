@@ -3,185 +3,537 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narendra Khatpe Portfolio</title>
+    <title>Narendra Khatpe | DevOps Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="sidebar">
-        <img src="narendradk.jpg" alt="Narendra Khatpe">
-        <a href="#about">ABOUT ME</a>
-        <a href="#education">EDUCATION</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#leadership">LEADERSHIP</a>
-        <a href="#contact">CONTACT</a>
+        <div class="profile-container">
+            <div class="profile-image-container">
+                <img src="narendradk.jpg" alt="Narendra Khatpe" class="profile-image">
+            </div>
+            <h3 class="sidebar-name">Narendra Khatpe</h3>
+            <p class="sidebar-title">ML, DevOps & Software Engineer</p>
+            <div class="sidebar-social">
+                <a href="mailto:narendrakhatpe@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="http://www.linkedin.com/in/narendra-khatpe"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nkhatpe"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#about" class="nav-item"><i class="fas fa-user"></i> <span>About</span></a>
+            <a href="#skills" class="nav-item"><i class="fas fa-code-branch"></i> <span>Skills</span></a>
+            <a href="#experience" class="nav-item"><i class="fas fa-briefcase"></i> <span>Experience</span></a>
+            <a href="#projects" class="nav-item"><i class="fas fa-project-diagram"></i> <span>Projects</span></a>
+            <a href="#education" class="nav-item"><i class="fas fa-graduation-cap"></i> <span>Education</span></a>
+            <a href="#leadership" class="nav-item"><i class="fas fa-users"></i> <span>Leadership</span></a>
+            <a href="#contact" class="nav-item"><i class="fas fa-paper-plane"></i> <span>Contact</span></a>
+        </nav>
     </div>
 
     <main>
-        <section id="about">
-            <div class="container">
-                <h2>Hey there :)</h2>
-                <div class="header-container">
-                    <div class="header-left">
-                        <h1>Narendra Khatpe</h1>
-                        <p>DevOps Engineer | Cloud Engineer | Software Developer</p>
+        <section id="about" class="animate__animated animate__fadeIn">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span class="highlight-text">Narendra Khatpe</span></h1>
+                    <h2 class="tagline">Building resilient systems & optimizing workflows</h2>
+                    <p class="intro-text">DevOps Engineer specializing in CI/CD pipelines, cloud architecture, and automation</p>
+                    <p class="mission-text">
+                      Driven to automate, optimize, and intelligently scale the systems that move the world forward.
+                    </p>                    
+                    <div class="cta-buttons">
+                      <a href="#projects" class="cta-primary">View Projects</a>
+                      <a href="#contact" class="cta-secondary">Contact Me</a>
+                      <a href="assets/Narendra_Khatpe_Resume.pdf" class="cta-secondary" download>Download Resume</a>
+                    </div>                    
+                </div>
+                <!-- <div class="stats-container">
+                    <div class="stat-box">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">Release Frequency Improvement</span>
                     </div>
-                    <div class="header-right">
-                        <div class="social-links">
-                            <a href="mailto:narendrakhatpe@gmail.com"><i class="fas fa-envelope"></i></a>
-                            <a href="http://www.linkedin.com/in/narendra-khatpe"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/nkhatpe"><i class="fab fa-github"></i></a>
+                    <div class="stat-box">
+                        <span class="stat-number">25%</span>
+                        <span class="stat-label">Deployment Incident Reduction</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">35%</span>
+                        <span class="stat-label">Resolution Time Improvement</span>
+                    </div>  -->
+                </div>
+            </div>
+            <div class="about-details">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <p>Welcome! I'm Narendra, a passionate DevOps Engineer with a solid foundation in computer science. Currently pursuing my Master's degree from Binghamton University with an expected graduation in May 2025. My professional experience at Tata Consultancy Services has equipped me with expertise in optimizing CI/CD pipelines, cloud infrastructure management, and developing robust software solutions.</p>
+                <p>I specialize in a wide range of tools and technologies including AWS, Azure, Jenkins, Docker, Kubernetes, and various programming languages like Python, Java, and more. I bring bilingual capabilities (English/Japanese) that have proven valuable in global team environments.</p>
+                <p>I thrive on tackling complex challenges and driving innovation in every project I undertake. My goal is to leverage my technical expertise and problem-solving abilities to create efficient, scalable solutions that make a meaningful impact.  </p>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+        <section id="skills" class="animate__animated">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Arsenal</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash/Shell</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Frameworks</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">OOP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Cloud & Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS (EC2, S3, Lambda)</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Google Cloud</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Oracle</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">ServiceNow</span>
+                            <span class="skill-tag">Zabbix</span>
+                            <span class="skill-tag">Ansible</span>
+                            <span class="skill-tag">Nginx</span>
+                            <span class="skill-tag">Prometheus</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">JIRA</span>
                         </div>
                     </div>
                 </div>
-                <p>Welcome! I'm Narendra, a passionate DevOps Engineer with a solid foundation in computer science. Currently pursuing my Master's degree from Binghamton University with an expected graduation in May 2025. My professional experience at Tata Consultancy Services has equipped me with expertise in optimizing CI/CD pipelines, cloud infrastructure management, and developing robust software solutions.</p>
-                <p>I specialize in a wide range of tools and technologies including AWS, Azure, Jenkins, Docker, Kubernetes, and various programming languages like Python, Java, and more. My bilingual capabilities in English and Japanese have enabled me to work effectively in global teams.</p>
-                <p>I thrive on tackling complex challenges and driving innovation in every project I undertake. My goal is to leverage my technical expertise and problem-solving abilities to create efficient, scalable solutions that make a meaningful impact.</p>
-            </div>
-        </section>
 
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Binghamton University, State University of New York</h3>
-                    <p><strong>Master of Science in Computer Science</strong> | GPA: 3.48</p>
-                    <p>Expected Graduation: May 2025</p>
-                    <p><strong>Coursework:</strong> Design Patterns, Algorithms, Web Programming, Social Media Data Science Pipeline</p>
-                </div>
-                <div class="education-item">
-                    <h3>Savitribai Phule Pune University, Pune, India</h3>
-                    <p><strong>Bachelor of Engineering in Computer Engineering</strong> | GPA: 3.56</p>
-                    <p>Graduation: April 2020</p>
-                    <p><strong>Coursework:</strong> High Performance Computing, Algorithms, Cloud Computing, Machine Learning</p>
+                <div class="languages-section">
+                    <div class="language-item">
+                        <span class="language-name">English</span>
+                        <div class="language-level">
+                            <div class="level-bar" style="width: 100%"></div>
+                        </div>
+                        <span class="language-proficiency">Native/Fluent</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Japanese</span>
+                        <div class="language-level">
+                            <div class="level-bar" style="width: 60%"></div>
+                        </div>
+                        <span class="language-proficiency">Intermediate</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills">
+        <div class="spacer"></div>
+        <section id="experience" class="animate__animated">
             <div class="container">
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li><i class="fas fa-code"></i> <strong>Languages:</strong> Python, Bash/Shell Script, Java, C, C++, SQL, JavaScript, TypeScript, HTML, CSS</li>
-                    <li><i class="fas fa-cogs"></i> <strong>Frameworks:</strong> Agile, CI/CD, Git, Django, Docker, Kubernetes, Flask, React, RESTful APIs, OOP</li>
-                    <li><i class="fas fa-database"></i> <strong>Cloud & Databases:</strong> AWS (EC2, S3, Lambda), Azure, Google Cloud, MySQL, PostgreSQL, MongoDB, Oracle</li>
-                    <li><i class="fas fa-tools"></i> <strong>Tools:</strong> Jenkins, Terraform, ServiceNow, Zabbix, Ansible, Nginx, Vagrant, Prometheus, Grafana, JIRA</li>
-                    <li><i class="fas fa-globe"></i> <strong>Additional:</strong> Japanese (intermediate)</li>
-                </ul>
+                <div class="section-title">
+                    <h2>Professional Journey</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jul 2022 - Jun 2023</div>
+                        <div class="timeline-content">
+                            <h3>DevOps Engineer</h3>
+                            <h4>Tata Consultancy Services</h4>
+                            <div class="tag-container">
+                                <span class="exp-tag">CI/CD</span>
+                                <span class="exp-tag">Jenkins</span>
+                                <span class="exp-tag">XebiaLabs</span>
+                                <span class="exp-tag">Azure</span>
+                                <span class="exp-tag">Automation</span>
+                            </div>
+                            <ul class="achievement-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Designed and maintained robust CI/CD pipelines for 20+ microservices powering core banking operations</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Developed automation scripts that eliminated manual intervention across build, test, and deployment workflows</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Created comprehensive runbooks and technical documentation for incident response and system recovery</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chart-line"></i>
+                                    <span><strong>Impact:</strong> 30% improved release frequency, 25% reduced post-deployment incidents</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Mar 2021 - Jul 2022</div>
+                        <div class="timeline-content">
+                            <h3>Systems Engineer</h3>
+                            <h4>Tata Consultancy Services</h4>
+                            <div class="tag-container">
+                                <span class="exp-tag">ServiceNow</span>
+                                <span class="exp-tag">Datadog</span>
+                                <span class="exp-tag">JP1</span>
+                                <span class="exp-tag">Bilingual Support</span>
+                            </div>
+                            <ul class="achievement-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Provided bilingual technical support for Japanese enterprise clients, coordinating with global teams</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Managed JP1 and Datadog monitoring systems through ServiceNow, performing critical system maintenance</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Mentored a team of 7 engineers and developed SOPs that improved operational consistency</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-chart-line"></i>
+                                    <span><strong>Impact:</strong> 35% faster resolution time, zero client escalations across critical platforms</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+        <section id="projects" class="animate__animated">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-graduation-cap project-icon"></i>
+                            <h3>CourseMatch</h3>
+                        </div>
+                        <p class="project-subtitle">Course Assignment Optimization System</p>
+                        <div class="project-period">Jun 2024 - Present</div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ILP</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">ML</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Collaborating with graduate director and faculty staff to solve complex course assignment optimization for 1,000+ students at Watson College's School of Computing.</p>
+                            <ul>
+                                <li>Encoded hard and soft constraints for balancing student preferences</li>
+                                <li>Integrated ML algorithms to predict course demand</li>
+                                <li>Designed for scalability across multiple departments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-chart-network project-icon"></i>
+                            <h3>Meme Trend Analysis</h3>
+                        </div>
+                        <p class="project-subtitle">Social Media Data Science Pipeline</p>
+                        <div class="project-period">Aug 2024 - Dec 2024</div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Built a scalable system to analyze 1M+ memes from Reddit and 4chan, extracting metadata and processing user comments around political events.</p>
+                            <ul>
+                                <li>95% accurate sentiment analysis pipeline</li>
+                                <li>Processing 4,000+ daily comments</li>
+                                <li>Interactive dashboard for visualizing meme propagation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-image project-icon"></i>
+                            <h3>Advanced Image Editor</h3>
+                        </div>
+                        <p class="project-subtitle">Desktop Application</p>
+                        <div class="project-period">Mar 2024 - May 2024</div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Developed a feature-rich desktop image editor with optimized processing algorithms and intuitive interface.</p>
+                            <ul>
+                                <li>15+ filters and transformations</li>
+                                <li>40% faster processing times vs. standard libraries</li>
+                                <li>Custom UI component design with Tkinter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-university project-icon"></i>
+                            <h3>AI College Recommender</h3>
+                        </div>
+                        <p class="project-subtitle">Published Research Project</p>
+                        <div class="project-period">Jun 2019 - Mar 2020</div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JSP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">ML</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Created a recommendation system for prospective students that combined collaborative and content-based filtering approaches.</p>
+                            <ul>
+                                <li>87% recommendation accuracy</li>
+                                <li>Published in IJIRSET journal</li>
+                                <li>Dual-algorithm hybrid approach</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+        <section id="education" class="animate__animated">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Academic Background</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="education-grid">
+                    <div class="edu-card">
+                        <div class="edu-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-details">
+                            <h3>Master of Science in Computer Science</h3>
+                            <h4>Binghamton University, State University of New York</h4>
+                            <div class="edu-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Expected May 2025</span>
+                                <span><i class="fas fa-star"></i> GPA: 3.48/4.0</span>
+                            </div>
+                            <div class="edu-courses">
+                                <h5>Key Coursework</h5>
+                                <div class="course-tags">
+                                    <span class="course-tag">Design Patterns</span>
+                                    <span class="course-tag">Algorithms</span>
+                                    <span class="course-tag">Web Programming</span>
+                                    <span class="course-tag">Social Media Data Science Pipeline</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-card">
+                        <div class="edu-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-details">
+                            <h3>Bachelor of Engineering in Computer Engineering</h3>
+                            <h4>Savitribai Phule Pune University</h4>
+                            <div class="edu-meta">
+                                <span><i class="fas fa-calendar-alt"></i> April 2020</span>
+                                <span><i class="fas fa-star"></i> GPA: 3.56/4.0</span>
+                            </div>
+                            <div class="edu-courses">
+                                <h5>Key Coursework</h5>
+                                <div class="course-tags">
+                                    <span class="course-tag">High Performance Computing</span>
+                                    <span class="course-tag">Algorithms</span>
+                                    <span class="course-tag">Cloud Computing</span>
+                                    <span class="course-tag">Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <section id="projects">
+        <section id="leadership" class="animate__animated">
             <div class="container">
-                <h2>Project Experience</h2>
-                <div class="project-item">
-                    <h3>CourseMatch: Course Assignment Optimization System</h3>
-                    <p><strong>Duration:</strong> June 2024 – Present</p>
-                    <p><strong>Technologies:</strong> Python, ILP, Pandas, Machine Learning Algorithms</p>
-                    <ul>
-                        <li>Collaborating with Graduate Director Prof. Lander and Prof. Sikdar to solve an integer linear programming problem for optimizing course assignments for 1,000+ students for the Watson College's School of Computing</li>
-                        <li>Encoding hard and soft constraints to balance student preferences and department capacities</li>
-                        <li>Integrating machine learning algorithms to predict course demand and improve how students are matched to their preferred courses</li>
-                    </ul>
+                <div class="section-title">
+                    <h2>Leadership Experience</h2>
+                    <div class="section-divider"></div>
                 </div>
-                <div class="project-item">
-                    <h3>Meme Trend Analysis System</h3>
-                    <p><strong>Duration:</strong> August 2024 – December 2024</p>
-                    <p><strong>Technologies:</strong> Python, MongoDB, Flask, NLP</p>
-                    <ul>
-                        <li>Built a scalable system to analyze 1M+ memes from Reddit and 4chan by extracting metadata and user comments, enabling trend analysis before and after a major political election event</li>
-                        <li>Implemented a sentiment analysis pipeline with 95% accuracy to process 4,000+ daily comments</li>
-                        <li>Developed a dashboard to visualize meme propagation and emerging trends across online communities</li>
-                    </ul>
-                </div>
-                <div class="project-item">
-                    <h3>Advanced Image Editor</h3>
-                    <p><strong>Duration:</strong> March 2024 – May 2024</p>
-                    <p><strong>Technologies:</strong> Python, Tkinter, OpenCV</p>
-                    <ul>
-                        <li>Developed a desktop image editor with 15+ filters and transformations using OpenCV and a custom Tkinter interface</li>
-                        <li>Redesigned and optimized image processing algorithms to handle high-resolution images more efficiently</li>
-                        <li>Achieved over 40% faster processing times compared to standard OpenCV library functions</li>
-                    </ul>
-                </div>
-                <div class="project-item">
-                    <h3>AI College Recommendation System</h3>
-                    <p><strong>Duration:</strong> June 2019 – March 2020</p>
-                    <p><strong>Technologies:</strong> Java, JSP, MySQL, Machine Learning Algorithms</p>
-                    <ul>
-                        <li>Built a college recommendation platform using collaborative and content-based filtering with 87% accuracy</li>
-                        <li>Developed backend using JSP and MySQL, and published findings in IJIRSET journal as part of academic research</li>
-                    </ul>
+                
+                <div class="leadership-card">
+                    <div class="leadership-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="leadership-content">
+                        <h3>Tier-2 Support Team Lead</h3>
+                        <h4>Tata Consultancy Services</h4>
+                        <div class="leadership-period">March 2021 - July 2022</div>
+                        <div class="leadership-details">
+                            <p>Led the Tier-2 support team for critical Japanese enterprise systems, mentoring team members and ensuring consistent service delivery.</p>
+                            <ul class="leadership-achievements">
+                                <li>
+                                    <i class="fas fa-medal"></i>
+                                    <span>Trained and mentored 7 engineers, reducing onboarding time and improving technical capabilities</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-medal"></i>
+                                    <span>Developed comprehensive SOPs and troubleshooting guides that improved operational consistency</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-medal"></i>
+                                    <span>Maintained zero escalations while supporting business-critical platforms across global teams</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience">
+        <section id="contact" class="animate__animated">
             <div class="container">
-                <h2>Professional Experience</h2>
-                <div class="experience-item">
-                    <h3>DevOps Engineer | Tata Consultancy Services, Pune, India</h3>
-                    <p><strong>Duration:</strong> July 2022 – June 2023</p>
-                    <ul>
-                        <li>Designed and maintained robust CI/CD pipelines using Jenkins and XebiaLabs Release, ensuring deployment of over 20 microservices that powered core banking operations for a major financial institution</li>
-                        <li>Developed Bash and Python scripts to automate build, test, and deployment workflows, improving release reliability and eliminated manual intervention across the CI/CD pipelines</li>
-                        <li>Managed observability tools like Azure Monitor and Zabbix; created runbooks and technical documentation to support incident response, system recovery, and team-wide operational readiness</li>
-                        <li>Improved release frequency by 30% and reduced post-deployment incidents by 25% through integrated automation, testing coverage, and standardized deployment pipelines</li>
-                    </ul>
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                    <div class="section-divider"></div>
                 </div>
-                <div class="experience-item">
-                    <h3>Systems Engineer | Tata Consultancy Services, Pune, India</h3>
-                    <p><strong>Duration:</strong> March 2021 – July 2022</p>
-                    <ul>
-                        <li>Provided bilingual technical support for Japanese enterprise clients, resolving infrastructure and application issues through real-time coordination with global development and operations teams</li>
-                        <li>Monitored Japanese enterprise systems like JP1 and Datadog through ServiceNow; performed daily tasks such as patching, backup verification, data validation and log analysis to maintain availability and regulatory compliance</li>
-                        <li>Mentored a Tier-2 support team of 7 engineers and developed internal Standard Operating Procedures (SOPs) and troubleshooting guides, reducing onboarding time and improving operational consistency</li>
-                        <li>Achieved a 35% improvement in resolution time and maintained zero client escalations across all business-critical platforms and production environments</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="leadership">
-            <div class="container">
-                <h2>Leadership Experience</h2>
-                <div class="leadership-item">
-                    <h3>Tier-2 Lead | Tata Consultancy Services, Pune, India</h3>
-                    <p><strong>Duration:</strong> March 2021 – July 2022</p>
-                    <ul>
-                        <li>Led and supervised the Tier-2 Team for Datadog and JP1 Systems as part of the Japan Operations Project</li>
-                        <li>Trained and mentored new team members in the intricacies of the project workflow, proactively identifying and strengthening their skill gaps</li>
-                        <li>Maintained an optimal workflow throughout the project phases, achieving zero escalations and ensuring timely project deliveries</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Let's Connect!</h2>
-                <h3>I'm always excited to explore new opportunities and collaborations. If you have a project in mind or just want to say hi, feel free to reach out!</h3>
-                <form>
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-                    <input type="email" id="email" name="email" placeholder="Your Email">
-                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-                <div class="social-links">
-                    <a href="mailto:narendrakhatpe@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="http://www.linkedin.com/in/narendra-khatpe"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/nkhatpe"><i class="fab fa-github"></i></a>
+                
+                <div class="contact-content">
+                    <div class="contact-intro">
+                        <p>I'm always open to discussing new projects, opportunities, or collaborations. Whether you have a question or just want to say hello, I'll do my best to get back to you!</p>
+                    </div>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:narendrakhatpe@gmail.com">narendrakhatpe@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Binghamton, New York</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-laptop-code"></i>
+                                <div>
+                                    <h4>Social</h4>
+                                    <div class="contact-social">
+                                        <a href="http://www.linkedin.com/in/narendra-khatpe" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://github.com/nkhatpe" class="social-icon"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <span>Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Narendra Khatpe. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2025 Narendra Khatpe. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="mailto:narendrakhatpe@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="http://www.linkedin.com/in/narendra-khatpe"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nkhatpe"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </footer>
-<!-- Link to JavaScript File -->
-<script src="script.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
